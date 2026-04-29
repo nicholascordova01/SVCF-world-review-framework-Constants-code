@@ -127,7 +127,6 @@ def print_constants():
     print(f"    PSI^2+2*PSI-1 = {PSI**2+2*PSI-1:.2e}  (should be 0)")
     print(f"    BETA = (B+1)/2 = {(B+1)/2:.10f}  (matches BETA: {(B+1)/2 == BETA})")
     print(f"    sum(SHELL_DEGENERACY) = {sum(SHELL_DEGENERACY)} = {MAGIC_NUMBERS[-1]}")
-    import numpy as np
     cs = list(np.cumsum(SHELL_DEGENERACY))
     print(f"    cumsum = {[int(x) for x in cs]}")
     print(f"    matches MAGIC_NUMBERS: {[int(x) for x in cs] == MAGIC_NUMBERS}")
